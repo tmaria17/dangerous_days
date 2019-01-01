@@ -11,7 +11,6 @@ class SearchFacade
     neos_data[most_dangerous_day].each do |space_rock_data|
      space_rocks.push(Neo.new(space_rock_data)) if space_rock_data[:is_potentially_hazardous_asteroid]
     end
-    # binding.pry
     space_rocks
   end
 
