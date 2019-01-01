@@ -1,5 +1,7 @@
 class MostDangerousDayController < ApplicationController
   def index
-    @search_facade = SearchFacade.new
+    # require 'pry'
+    # binding.pry
+    @search_facade = SearchFacade.new(params)
   end
 end
