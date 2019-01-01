@@ -1,10 +1,10 @@
 <h1>Most Dangerous Day</h1>
 <h3><%= @search_facade.start_date %> - <%= @search_facade.end_date %></h3>
 <h2><%= @search_facade.most_dangerous_day %></h2>
-<!-- <h3> <%= @search.neos.count %>  potentially dangerous near earth objects</h3>
-<% @search.neos.each do |neo| %>
+<h3> <%= @search_facade.neos.count %>  potentially dangerous near earth objects</h3>
+<% @search_facade.neos.each do |neo| %>
 <ul class="neo">
-  <li class="name">neo.name</li>
+  <li class="name"> Name: <%= neo.name %></li>
   <li class="neo_id">NEO Reference ID: <%= neo.reference_id %></li>
 </ul>
-<% end %> -->
+<% end %>
